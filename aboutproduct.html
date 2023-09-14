@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Web Application</title>
+    <!--Icons-->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--Normalize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+    <!--Font Awesome-->
+   <link
+    rel="stylesheet"
+    hef="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="addProductstyle.css">
+
+    <script src="addProduct.js" type="text/javascript"></script>
+</head>
+<body>
+    
+    <!--Navbar start-->
+    <nav class="navbar">
+        <div class="nav-center">
+            <!--header-->
+            <div class="nav-header">
+                <a href="index.html" class="nav-logo">
+                    <img src="Screenshot 2023-09-02 163851.png" alt="logo">
+                </a>
+                <button type="button" class="btn nav-btn">
+                    <i class="bx bx-menu" id="menu-icon"></i>
+                </button>
+            </div>
+            <!--Links-->
+            <div class="nav-links show-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="recipe.html" class="nav-link">Recipe</a>
+                <a href="process.html" class="nav-link">Process</a>
+                <a href="about.html" class="nav-link">About</a>
+                <div class="nav-link contact-link">
+                    <a href="contact.html" class="btn">Contact</a>
+                  </div>
+
+            </div>
+        </div>
+    </nav>
+    <!--Navigation end-->
+    <!--main-->
+    <button type="delete" class="delete" onclick="deleteData()"><a href="">CLEAR<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAtVJREFUSEvF1mvI3nMYB/DPgygisRJKFGbLyhvlVJu8WCRMTaStvRBZDYWitbBsE0sOL5xeyFoLNXshh7LaWitySDmEnGMHIWkt2XLo+3Td677//Z/d9/3f6rle/Q/XdX1/1/W7Dt8J0yQT04RrXOAjcRHOxKl16J34Hu/jn1EDGRX4HNyPBThxCue/YxPW4LthBxgGfCwewVIk2lFkHx7DSuS5VQ4GnHS+jvPLMk424m18gm9wVKX9AlyJ6+tbTJL6a/BLG/JUwLOwHSeV0VsV9Q9DQj4bz+KK0ttRNfFz064N+BR8hNNL+SE8OEqOSyc+H8U99f4FLsTefh9twK/ghlJ6oO5qDNwDqk/gznp7EncdDHhO3V903sDVXRDLJsW4DZdgf9VCWm9SmhG/hMWVlnNxQLHjAWbisyq41VjeBnw0fsPxeKaKqSPegFl6+zqkMM9qA04lbq4fVyGVfDjkFrxQjpLFr5upXoIXSyEV3UvzvI7oW8suPf5xPaevMxsG7vjeaoN8P6Zv6gR4y5jgl6MHnBH7R9mnslPhA8B3Y20pnIA99XyowPH1Z/kKxuNN4JuwoRTOw1d9wGMGPKnei3g2Pi8HNyJzYiDirLt3SyGHeLkLWovNIqyr75lgHzaB09O/4mSsRwwOh7yKhdiN0/BfEzjvz+FW/IU0/0+HiBwf2WSZEU/jjp6/5uSKYoZ6vr+D+b0TdjhARmbu+TL8i2yuMJVJaVsSSfPN9f9hrOgAGpOnsKxsn8dt/X7agGfggxrq0Q2TyJYaVY6olultpi9rUfR6ecqI8yMc670GEbgdPw5BD4HInJ9bepl+l9acHjAdh/r8jdfwJj4t6pOiyeBPm2TWh/r0uFmydi12tR12GNk7DrnnVGNSOIqEm4UgrupK9vpBMsnuK3qbEdgmobchg9m7w65kbEIfVnkxzmgQ+m+rINM2I8mwVI/kpIvStAH/DyVUgh/uYPhzAAAAAElFTkSuQmCC"/></a></button>
+
+    <main class="page">
+        <h2>Add your Product here</h2>
+
+        <div class="addProductPage">
+            
+
+            <div id="addpd">
+                
+                <table>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="image">Image URL:</label></td>
+                        <td><input type="text" id="image" name="image" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="description">Description:</label></td>
+                        <td><textarea id="description" name="description" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td onclick="alert('Product Added !!')"><input type="submit" value="Add Product" onclick="addProduct()"></td>
+                    </tr>
+                </table>
+                
+    
+            </div>
+            
+        </div>
+        
+    </main>
+    <!--end main-->
+    <!--footer-->
+    <footer class="page-footer">
+        <p> &copy; <span id="date"> 2023 </span>
+            <span class="footer-logo">
+            </span>
+            <span class="footer-logo">Recipe book by Pragya Poudel</span>
+        
+        </p>
+    </footer>
+    
